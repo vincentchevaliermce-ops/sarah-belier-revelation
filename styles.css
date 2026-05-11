@@ -74,6 +74,44 @@ h2 {
   font-size: 1.05rem;
 }
 
+.gate {
+  width: min(560px, 100%);
+  margin: 26px auto 0;
+  padding: 20px;
+  border: 1px solid rgba(216, 180, 106, 0.34);
+  background: rgba(21, 17, 17, 0.78);
+}
+
+.gate p {
+  margin: 0 0 16px;
+  color: var(--muted);
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+
+.gate button {
+  appearance: none;
+  width: 100%;
+  border: 0;
+  background: var(--red);
+  color: #fff;
+  padding: 14px 18px;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.gate button:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+
+.solution[hidden] {
+  display: none;
+}
+
 section {
   border-top: 1px solid var(--line);
   padding: 34px 0;
@@ -188,6 +226,10 @@ footer p {
 
   .reveal {
     padding: 22px;
+  }
+
+  .gate {
+    padding: 16px;
   }
 
   p {
